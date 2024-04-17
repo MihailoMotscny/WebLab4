@@ -1,0 +1,374 @@
+body {
+    margin: 0; /* усуваємо зовнішні відступи */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A9BFE4;
+    padding: 0px;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none; /* Відключаємо стилізований маркер списку */
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+nav ul a {
+    display: inline; /* Робимо елементи списку блоковими для розташування вряд */
+    margin-right: 70px;
+}
+
+.logo img {
+    height: 60px; /* Задаємо висоту логотипу */
+}
+
+nav {
+    flex-grow: 1; /* Рівномірно розподіляємо доступний простір */
+}
+
+.container  {
+    
+    
+    width: 100%;
+    height: 500px;
+    
+    display: flex;
+    
+}
+
+
+
+
+
+
+.item_1{
+    
+    width: 100%;
+    
+    justify-content: center; /* Центруємо по горизонталі */
+    align-items: center;
+    text-align: center; /* Відцентровуємо текст по горизонталі */
+    display: flex;
+    margin-left:5% ;
+    margin-right: 5%;
+}
+
+
+
+
+.item_2 {
+    width: 100%;
+    max-height: 100%;
+    top: 0; /* Закріплюємо зображення зверху */
+    right: 0; /* Закріплюємо зображення справа */
+}
+
+.item_2 img{
+    width: 100%;
+    height: 100%;
+    top: 0; /* Закріплюємо зображення зверху */
+    right: 0; /* Закріплюємо зображення справа */
+    margin: 0;
+}
+
+
+.container_2  {
+    flex-direction: row;   
+    width: 100%;
+    height: 25%;
+    position: relative;
+    display: flex;
+    
+}
+
+.item_con2 {
+    
+    position: relative;
+    padding: 3%;
+    
+    
+}
+
+.item_con2 img{
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+
+}
+
+.item_con2 button{
+    position: absolute; /* Встановлюємо позицію кнопки */
+    top: 80%; /* Вирівнюємо кнопку по вертикалі відносно батьківського контейнера */
+    left: 50%; /* Вирівнюємо кнопку по горизонталі відносно батьківського контейнера */
+    transform: translate(-50%, -50%);
+    
+    width: auto;
+    height: auto;
+    /* padding: 10px 20px; */
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #A9BFE4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    
+    /* background-color: #0056b3; */
+    transition: background-color 0.3s, transform 0.3s, font-size 0.3s;
+    
+    
+}
+
+.item_con2 button:hover {
+    background-color: #7a89a2; /* Зміна кольору при наведенні */
+    font-size: 16px; /* Зміна розміру шрифту при наведенні */
+    
+}
+
+
+.container_3  {
+    
+    
+    width: 100%;
+    height: 280px;
+    
+    display: flex;
+    
+}
+
+.aligned-text {
+    text-align: center; /* Вирівнюємо текст по центру */
+    position: absolute; /* Встановлюємо позицію кнопки */
+    top: 70%; /* Вирівнюємо кнопку по вертикалі відносно батьківського контейнера */
+    left: 50%; /* Вирівнюємо кнопку по горизонталі відносно батьківського контейнера */
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.aligned-text1 {
+    text-align: justify; /* Вирівнюємо текст по центру */
+    
+}
+
+
+.titles{
+    text-align: left;
+}
+
+.container_4  {
+    
+    background-color: #E5ECF7 ;
+    width: 100%;
+    height: 200px;
+    justify-content: center; /* Центруємо по горизонталі */
+    align-items: center;
+    display: flex;
+    
+}
+
+.item_con4 {
+    
+    width: auto;
+    position: relative;
+    padding: 1%;
+  
+}
+
+.item_con4 img{
+    width: 80%;
+    height: auto;
+    margin: 13px;
+    
+    position: relative;
+
+}
+
+.container_5  {
+    
+    flex-direction: row;   
+    width: 100%;
+    height: 25%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.item_con5 {
+    position: relative;
+    margin: 3%;
+    width: 30%;
+    height: auto;
+    justify-content: center;
+    display: flex; /* Додаємо flex контейнер всередині клітинки */
+    justify-content: center;
+    height: 300px;
+    box-shadow: 10px 10px 20px rgba(72, 72, 72, 0.5) ; /* Горизонтальне зміщення, вертикальне зміщення, розмір розсіювання, колір тіні */
+
+  
+}
+
+.item_con5 img{
+    width: 100%;
+    height: 75%;
+    
+    
+    position: relative;
+
+}
+
+.item_con5 p{
+    text-align: center; /* Вирівнюємо текст по центру */
+    position: absolute; /* Встановлюємо позицію кнопки */
+    top: 80%; /* Вирівнюємо кнопку по вертикалі відносно батьківського контейнера */
+    left: 50%; /* Вирівнюємо кнопку по горизонталі відносно батьківського контейнера */
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+}
+
+
+.container_6  {
+    flex-direction: column;
+    background-color: #E5ECF7 ;
+    width: 100%;
+    height: auto;
+    position: relative;
+    
+    /* align-items: center; */
+    
+
+    
+    display: flex;
+    
+    
+}
+
+.item_con6 {
+    
+    background-color: #ffffff ;
+    width: 80%;
+    height: 80;
+    margin: 2%;
+    margin-left: 10%;
+    
+    box-shadow: 10px 10px 20px rgba(72, 72, 72, 0.5) ;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.lefttext{
+    text-align: left;
+}
+
+.titletext{
+    color: #5e79a8;
+    margin: 2px;
+    
+    text-align: left;
+    
+}
+
+.maintext{
+    margin: 2px;
+    padding:2%;
+    text-align:justify;
+}
+
+input[type="text"]{
+    position: relative;
+    margin-left:10%;
+    width: 80%;
+    height: auto;
+    
+}
+
+textarea {
+    background-color: #ffffff ;
+    margin-left:10%;
+    margin-top: 1%;
+    width: 80%;
+    height: auto;
+    
+    
+}
+
+.container_6 button{
+    
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    width: 20%;
+    height: auto;
+    font-size:50%;
+    /* padding: 10px 20px; */
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #95da84;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    
+    /* background-color: #0056b3; */
+    transition: background-color 0.3s, transform 0.3s, font-size 0.3s;
+    
+    
+}
+
+.container_6 button:hover {
+    background-color: #5d9e4d; /* Зміна кольору при наведенні */
+    font-size: 16px; /* Зміна розміру шрифту при наведенні */
+    
+}
+
+
+.container_7  {
+    background-color: #8bb3f4;
+    flex-direction: row;   
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    justify-content: space-between;
+    
+}
+
+
+
+.item_con7 p{
+    
+    color: #ffffff;
+    margin: 2%;
+  
+}
+
+.centeryext{
+    margin-left: 10%;
+}
+
